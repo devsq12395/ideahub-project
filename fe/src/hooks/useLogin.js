@@ -15,7 +15,7 @@ const useLogin = () => {
 
       const {
         data: { data },
-      } = await axios.post("http://localhost:8080/api/v1/users/login", {
+      } = await axios.post("https://ideahub-project.vercel.app/api/v1/users/login", {
         username: username,
         password: password,
       });
@@ -41,7 +41,7 @@ const useLogin = () => {
     try {
       const {
         data: { data },
-      } = await axios.post("http://localhost:8080/api/v1/users/register", {
+      } = await axios.post("https://ideahub-project.vercel.app/api/v1/users/register", {
         username: username,
         email: email,
         password: password,
